@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+        <div id="app">
+            <label><input type="checkbox" v-model="val" value="A">A</lavel>
+            <label><input type="checkbox" v-model="val" value="B">B</lavel>
+            <label><input type="checkbox" v-model="val" value="C">C</lavel>
+            <p>{{val}}</p>
+        </div>
+         <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                  val:[]
+                }  
+              })
+        </script>
+    </body>
+</html>
